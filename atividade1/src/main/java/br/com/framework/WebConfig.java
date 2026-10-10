@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Bean;
 @EnableWebMvc
 @ComponentScan(basePackages = "br.com.framework")
 public class WebConfig implements WebMvcConfigurer {
-@bean
+@Bean
     public InternalResourceViewResolver viewResolver() {
         InternalResourceViewResolver resolver =
                 new InternalResourceViewResolver();
