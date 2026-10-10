@@ -1,40 +1,46 @@
-<?xml version="1.0" enconding="UTF-8"?>
+<<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
-         https://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 
-         <modelVersion>4.0.0</modelVersion>
+    <modelVersion>4.0.0</modelVersion>
 
-         <groupId>br.com.framework</groupId>
-         <artifactId>atividade1</artifactId>
-         <version>1.0-SNAPSHOT</version>
-         <packaging>war</pacaging>
+    <groupId>br.com.framework</groupId>
+    <artifactId>atividade1</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>war</packaging>
 
-         <properties>
-             <maven.compiler.source>17</maven.compiler.source>
-             <maven.compiler.target>17</maven.compiler.target>
-             <project.build.sourceEncoding>UFT-8</project.build.sourceEncoding>
-             <spring.version>6.2.8</spring.version>
-        </properties>
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <spring.version>5.3.39</spring.version>
+    </properties>
 
-        <dependencies>
-            <dependency>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-webmvc</artifactId>
-                <version>${spring.version}</version>
-            </dependency>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
 
-            <dependency>
-                <groupId>jakarta.serlet</groupId>
-                <artifactId>jakarta.servlet-api</artifacId>
-                <version>6.0.0</version>
-                 <scope>provided</scope>
-            </dependency>
-        </dependencies>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>3.1.0</version>
+            <scope>provided</scope>
+        </dependency>
 
-        <build>
-            <finalName>atividade1</finalName>
-        </build>
+        <dependency>
+            <groupId>javax.servlet.jsp</groupId>
+            <artifactId>javax.servlet.jsp-api</artifactId>
+            <version>2.3.3</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
 
-<project>                     
+    <build>
+        <finalName>atividade1</finalName>
+    </build>
+
+</project>
